@@ -1,0 +1,153 @@
+/* main style sheet project Sasec */
+
+body {
+}
+
+/*Fonts including*/
+
+@font-face {
+    font-family: 'Conv_eurosti3';
+    src: url('../fonts/eurosti3.eot');
+    src: local('☺'), url('../fonts/eurosti3.woff') format('woff'), url('../fonts/eurosti3.ttf') format('truetype'), url('../fonts/eurosti3.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_europeextbold';
+    src: url('../fonts/europeextbold.eot');
+    src: local('☺'), url('../fonts/europeextbold.woff') format('woff'), url('../fonts/europeextbold.ttf') format('truetype'), url('../fonts/europeextbold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_MyriadPro-Regular';
+    src: url('../fonts/MyriadPro-Regular.eot');
+    src: local('☺'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Head section*/
+
+.head-main {
+    background-image: url("../images/head-background.png");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 467px;
+    overflow-y: visible;
+
+}
+
+.head-main.content {
+    min-width: 1193px;
+    width: 1193px;
+    padding: 0 19%;
+}
+
+.head-top-line {
+    background-image: url("../images/head-top-line.png");
+    background-repeat: repeat-x;
+    height: 52px;
+    width: 100%;
+}
+
+.logo-text {
+    /*background: url("../images/head-logo-text.png") no-repeat;*/
+    /*width: 511px;*/
+    /*height: 26px;*/
+    float: left;
+    margin: 53px 0 50px 0;
+}
+
+.logo-text.text-1 {
+    color: #ffffff;
+    font-family: Conv_eurosti3;
+    font-size: 15pt;
+    padding: 8px 0 0 63px;
+    word-spacing: -1px;
+}
+
+.logo-text.text-2 {
+    color: #aa6d58;
+    font-family: Conv_eurosti3;
+    font-size: 15pt;
+    padding: 8px 0 0 11px;
+    word-spacing: -2px;
+}
+
+.logo-text.text-3 {
+    color: #ffffff;
+    font-family: Conv_europeextbold;
+    font-size: 22pt;
+    letter-spacing: -7px;
+    padding: 0 0 0 6px;
+}
+
+.logo-text.text-4 {
+    color: #ffffff;
+    font-family: Conv_eurosti3;
+    font-size: 15pt;
+    padding: 8px 0 0 12px;
+}
+
+.logo-img {
+    background: url("../images/logo.png") no-repeat;
+    position: relative;
+    float: left;
+    margin: -52px 0 0 36px;
+    z-index: 9999;
+    width: 515px;
+    height: 228px;
+}
+
+.head-main.stanless-line {
+    background: url("../images/head-stanless-line.png") no-repeat;
+    width: 1193px;
+    height: 53px;
+    position: relative;
+    float: left;
+    margin: -43px -1px 0;
+}
+
+/* Main menu */
+.head-main.menu {
+    background: url("../images/head-menu-bg.png") no-repeat;
+    width: 311px;
+    height: 272px;
+    float: left;
+    margin: -15px -1px 0;
+}
+
+.head-main.menu ul {
+    font-family: Conv_MyriadPro-Regular;
+    font-size: 18pt;
+    font-variant: all-petite-caps;
+    margin: 18px 0 0 21px;
+    color: #ffffff;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+    display: table;
+    cursor: pointer;
+}
+
+.head-main.menu li {
+    /*background: url("../images/head-menu-item.png") no-repeat 0 25px;*/
+    list-style-image: url("../images/head-menu-item.png");
+    padding: 15px 0 0 6px;
+}
+
+.head-main.menu li:hover {
+    list-style-image: url("../images/head-menu-item-hover.png");
+    font-weight: bold;
+    color: #e88460;
+    letter-spacing: 0;
+    word-spacing: -3px;
+    border-bottom: solid 3px #008abb;
+    padding: 17px 0 0 6px;!important;
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content;
+    line-height: 25px;
+}

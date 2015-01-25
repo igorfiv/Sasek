@@ -1,10 +1,47 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html xmlns="http://www.w3.org/1999/html">
+    <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
-</head>
+    <title>Sasek</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--Pixel Perfect-->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/markup.js"></script>
+    <!--End Pixel Perfect-->
+        <script type="text/javascript">
+            $(window).load(function(){
+                var markup = new Markup({
+                    overlay:{
+                        basePath:'psd/Sasek/',
+                        images:{
+                            '_default_':'Sasek_5.png'
+                        }
+                    }
+                });
+            });
+        </script>
+    </head>
 <body>
-
+    <div class="head-main">
+        <div class="head-top-line"></div>
+            <div class="head-main content">
+                <h1 class="logo-text text-1">STAVEBN&Iacute FIRMA</h1>
+                <h1 class="logo-text text-2">jsme na trhu let</h1>
+                <h1 class="logo-text text-3">14</h1>
+                <h1 class="logo-text text-4">LET</h1>
+                <div class="logo-img"></div>
+                <div class="head-main stanless-line"></div>
+                <div class="head-main menu">
+                    <ul>
+                        <li>&Uacutevodn&iacute strana</li>
+                        <li>Nab&iacutedka slu&#382;eb</li>
+                        <li>Postup rekonstrukce</li>
+                        <li>Fotogalerie</li>
+                        <li>Kontakt</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
 </body>
 </html>
