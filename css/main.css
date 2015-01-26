@@ -1,6 +1,8 @@
 /* main style sheet project Sasec */
 
 body {
+    height: 1080px;
+    overflow-y:scroll;
 }
 
 /*Fonts including*/
@@ -118,6 +120,7 @@ body {
     height: 272px;
     float: left;
     margin: -15px -1px 0;
+    display: block;
 }
 
 .head-main.menu ul {
@@ -151,3 +154,105 @@ body {
     width: -webkit-max-content;
     line-height: 25px;
 }
+
+/* sub-menu*/
+
+.head-main.menu li:hover ul, .head-main.menu .sub-menu li:hover ul {
+    display: block;
+    position: absolute;
+    z-index: 50;
+}
+
+.head-main.menu .sub-menu li:hover ul {
+    margin: -25px 0 0 208px;
+    padding: 0 0 0 3px;
+    z-index: 50;
+}
+
+.head-main .sub-menu li {
+    list-style: none;
+}
+
+.head-main.menu li:hover ul {
+    font-family: Conv_MyriadPro-Regular;
+    font-size: 9pt;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: -1px;
+    margin: 0 0 0 -6px;
+    padding: 4px 0 0 0;
+    text-align: center;
+    width: 208px;
+    word-spacing: 3px;
+
+}
+
+.head-main.menu .sub-menu li {
+    height: 26px;
+    padding: 0;
+    background: #b85d3d;
+
+}
+
+.head-main.menu .sub-menu li:hover {
+    height: 26px;
+    padding: 0;
+    background: #a04c2d;
+    border: none;
+    width: inherit;
+    list-style: none;
+    color: #ffffff;
+
+}
+
+.head-main.menu .sub-menu, .head-main.menu .sub-menu .sub-menu  {
+    display: none;
+
+}
+
+/*head-slider*/
+.head-main .head-slider {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #005f84 #005f84;
+    border-image: none;
+    border-right: 5px solid #005f84;
+    border-style: none solid solid;
+    border-width: medium 5px 5px;
+    display: block;
+    float: left;
+    height: 377px;
+    margin: -42px 0 0 17px;
+    width: 810px;
+}
+
+/*Search*/
+.main {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.main .search {
+    background: url("../images/search.png");
+    display: block;
+    float: left;
+    width: 221px;
+    height: 43px;
+    position: relative;
+    top:-40px;
+    left: 84px;
+}
+
+.main .search input {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    font-family: Tahoma;
+    font-size: 10pt;
+    margin: 11px 0 0 55px;
+    overflow: hidden;
+    width: 164px;
+}
+
+
